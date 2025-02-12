@@ -73,7 +73,7 @@ export default defineConfig({
   ],
   prefetch: true,
   site: "https://aiwaka.github.io",
-  base: "/under-construction/",
+  base: "/under-construction-website/",
   build: {
     // NOTE: ビルド時ページファイルとして`foo/index.html`が作られるのを防ぎ, 代わりに`foo.html`を作る.
     // これによりマークダウンの中で相対リンクを貼るようにすれば開発環境と同じリンク関係が保たれる.

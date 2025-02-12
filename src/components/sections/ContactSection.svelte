@@ -11,7 +11,7 @@
         <th>Mail</th>
         <td>
           <a
-            href="mailto:Kw.I.KU.2525@gmail.com?subject=%E3%81%8A%E5%95%8F%E3%81%84%E5%90%88%E3%82%8F%E3%81%9B（From Under-Construction）"
+            href="mailto:Kw.I.KU.2525@gmail.com?subject=%E3%81%8A%E5%95%8F%E3%81%84%E5%90%88%E3%82%8F%E3%81%9B（From Under-Construction Website）"
             target="_blank"
             rel="noopener noreferrer"
           >
