@@ -3,7 +3,7 @@
 ## 概要
 
 私のプロフィールサイトのリポジトリです.
-[GitHub Pages](https://aiwaka.github.io/under-construction/)で公開しています.
+[GitHub Pages](https://aiwaka.github.io/under-construction-website/)で公開しています.
 
 ~~SvelteKitで書き,~~ Svelteを用いてAstroで生成し, GitHub Actionsで自動でビルドを公開しています.
 （旧プロジェクトは`old-svelte/`を接頭辞としたブランチで残しています.）
