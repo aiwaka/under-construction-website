@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://aiwaka.github.io/under-construction/sitemap-index.xml
+Sitemap: https://aiwaka.github.io/under-construction-website/sitemap-index.xml
