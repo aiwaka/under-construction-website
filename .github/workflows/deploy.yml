@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
 
 env:
-  cache-version: v0.1
+  cache-version: v0.2
 
 # Allow this job to clone the repo and create a page deployment
 permissions:
