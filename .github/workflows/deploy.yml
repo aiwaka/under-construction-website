@@ -20,10 +20,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout your repository using git
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Restore data cache
-        uses: actions/cache/restore@v3
+        uses: actions/cache/restore@v4
         id: restore-data-cache
         with:
           path: src/generated/
@@ -36,7 +36,7 @@ jobs:
 
       - name: Restore cached images
         id: cache-images-restore
-        uses: actions/cache/restore@v3
+        uses: actions/cache/restore@v4
         with:
           path: node_modules/.astro/
           key: ${{ env.cache-version }}-images-${{ hashFiles('src/generated/*.json') }}
@@ -46,20 +46,20 @@ jobs:
         env:
           MICROCMS_SERVICE_DOMAIN: ${{ secrets.MICROCMS_SERVICE_DOMAIN }}
           MICROCMS_API_KEY: ${{ secrets.MICROCMS_API_KEY }}
-        uses: withastro/action@v0
+        uses: withastro/action@v3
         with:
-          node-version: 20
+          node-version: 22
 
       - name: Save cached data
         id: cache-data-save
-        uses: actions/cache/save@v3
+        uses: actions/cache/save@v4
         with:
           path: src/generated/
           key: ${{ env.cache-version }}-data-${{ hashFiles('src/generated/*.json') }}
 
       - name: Save cached images
         id: cache-images-save
-        uses: actions/cache/save@v3
+        uses: actions/cache/save@v4
         with:
           path: node_modules/.astro/
           key: ${{ env.cache-version }}-images-${{ hashFiles('src/generated/*.json') }}
@@ -73,4 +73,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v1
+        uses: actions/deploy-pages@v4
